@@ -1,0 +1,184 @@
+{
+  "systems": [
+    { "SystemId": 10, "SystemName": "AFMIS - نظام معلومات الإدارة المالية الحكومية", "system_counter": 0 },
+    { "SystemId": 20, "SystemName": "النظام المحاسبي الحكومي الموحد", "system_counter": 0 },
+    { "SystemId": 1, "SystemName": "help_desk - نظام الدعم المالي والتقني", "system_counter": 0 },
+    { "SystemId": 7, "SystemName": "البوابة الإلكترونية لوزارة المالية", "system_counter": 0 }
+  ],
+  "surveys": [
+    { "SurveyId": 101, "SystemId": 10, "SurveyName": "التقييم الشامل لكفاءة وجاهزية نظام AFMIS المالي" },
+    { "SurveyId": 102, "SystemId": 20, "SurveyName": "تقييم جاهزية تطبيق النظام المحاسبي الموحد" },
+    { "SurveyId": 1, "SystemId": 1, "SurveyName": "الفحص الأول لكفاءة الدعم الفني" }
+  ],
+  "levels": [
+    { "LevelId": 101, "SurveyId": 101, "LevelName": "الإدارة العليا واللجنة الإشرافية" },
+    { "LevelId": 102, "SurveyId": 101, "LevelName": "الفريق الفني ومسؤولو قواعد البيانات" },
+    { "LevelId": 103, "SurveyId": 101, "LevelName": "المستخدم النهائي والمحاسبون الميدانيون" },
+    { "LevelId": 104, "SurveyId": 102, "LevelName": "الإدارة المالية والرقابة" },
+    { "LevelId": 105, "SurveyId": 102, "LevelName": "فريق التطبيق والتشغيل" }
+  ],
+  "classes": [
+    { "ClassId": 201, "LevelId": 101, "ClassName": "الحوكمة ودورة المستندات القانونية" },
+    { "ClassId": 202, "LevelId": 101, "ClassName": "التقارير الرقابية ودعم اتخاذ القرار" },
+    { "ClassId": 203, "LevelId": 102, "ClassName": "قواعد البيانات والنسخ الاحتياطي" },
+    { "ClassId": 204, "LevelId": 102, "ClassName": "البنية التحتية والشبكة والأمان" },
+    { "ClassId": 205, "LevelId": 102, "ClassName": "الربط والتكامل والتوافق البرمجي" },
+    { "ClassId": 206, "LevelId": 103, "ClassName": "سهولة الواجهات وإدخال القيود" },
+    { "ClassId": 207, "LevelId": 103, "ClassName": "دقة موازين المراجعة والأستاذ العام" },
+    { "ClassId": 208, "LevelId": 103, "ClassName": "التدريب والدعم الفني الميداني" }
+  ],
+  "questions": [
+    {
+      "value_id": 1, "system_id": 10, "survey_id": 101, "sur_level": 101, "q_class_id": 201,
+      "q_order": 1, "q_name": "صلاحيات الحوكمة", "q_description": "وضوح مصفوفة الصلاحيات المالية وتوافقها مع القانون المالي واللوائح التنفيذية",
+      "q_type_a": "تقييم", "defect_category": "إداري", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 2, "system_id": 10, "survey_id": 101, "sur_level": 101, "q_class_id": 201,
+      "q_order": 2, "q_name": "دورة المستندات", "q_description": "مدى التزام النظام بدورة المستندات القانونية (أمر صرف، شيك، حوالة، تسوية) دون تجاوزات",
+      "q_type_a": "تقييم", "defect_category": "إداري", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 3, "system_id": 10, "survey_id": 101, "sur_level": 101, "q_class_id": 201,
+      "q_order": 3, "q_name": "الرقابة والاعتمادات", "q_description": "كفاءة إجراءات الرقابة الداخلية وإلزامية الاعتمادات والتوقيعات الإلكترونية متعددة المستويات",
+      "q_type_a": "تقييم", "defect_category": "إداري", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 4, "system_id": 10, "survey_id": 101, "sur_level": 101, "q_class_id": 202,
+      "q_order": 4, "q_name": "تقارير الختامي", "q_description": "قدرة النظام على استخراج تقارير الحساب الختامي والموقف المالي الفعلي لحظياً",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 5, "system_id": 10, "survey_id": 101, "sur_level": 101, "q_class_id": 202,
+      "q_order": 5, "q_name": "لوحات المؤشرات", "q_description": "دقة لوحات المؤشرات المالية (KPIs) ودعمها لمتخذي القرار بوزارة المالية",
+      "q_type_a": "تقييم", "defect_category": "إداري", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 6, "system_id": 10, "survey_id": 101, "sur_level": 101, "q_class_id": 202,
+      "q_order": 6, "q_name": "سجل التدقيق", "q_description": "توفر سجل تدقيق إلكتروني رقابي غير قابل للتعديل (Audit Trail) لجميع العمليات والحركات",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 7, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 203,
+      "q_order": 7, "q_name": "النسخ الاحتياطي", "q_description": "كفاءة خطة النسخ الاحتياطي التلقائي وسرعة استعادة البيانات (RTO & RPO)",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 8, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 203,
+      "q_order": 8, "q_name": "تكامل البيانات", "q_description": "سلامة تكامل قواعد البيانات ومنع التكرار وقفل الفترات المالية المقفلة تلقائياً",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 9, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 203,
+      "q_order": 9, "q_name": "أداء الخادم", "q_description": "أداء خادم قواعد البيانات وزمن استجابة الاستعلامات واستقرار الجلسات في أوقات الذروة",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 10, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 204,
+      "q_order": 10, "q_name": "الربط الشبكي", "q_description": "كفاءة واستقرار الربط الشبكي بين وزارة المالية والوحدات الحسابية والفروع الميدانية",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 11, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 204,
+      "q_order": 11, "q_name": "الأمن السيبراني", "q_description": "تطبيق معايير الأمن السيبراني وتشفير الاتصال والبيانات المالية الحساسة",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 12, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 204,
+      "q_order": 12, "q_name": "خطة الكوارث", "q_description": "توفر خطة التعافي من الكوارث (Disaster Recovery Plan) وتوافر الخوادم البديلة",
+      "q_type_a": "تقييم", "defect_category": "فني", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 13, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 205,
+      "q_order": 13, "q_name": "التوافق البرمجي", "q_description": "توافق النظام مع المعايير البرمجية الحديثة وخلوه من الثغرات والأخطاء المكتشفة",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 14, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 205,
+      "q_order": 14, "q_name": "التكامل البيني", "q_description": "إمكانية الربط البيني المباشر (APIs) مع البنك المركزي ومصلحتي الضرائب والجمارك",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 15, "system_id": 10, "survey_id": 101, "sur_level": 102, "q_class_id": 205,
+      "q_order": 15, "q_name": "مرونة التعديل", "q_description": "مرونة النظام في تعديل شجرة الحسابات واستيعاب التعديلات الهيكلية للموازنة",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 16, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 206,
+      "q_order": 16, "q_name": "سلاسة الواجهات", "q_description": "سلاسة وسرعة شاشات إدخال القيود اليومية وسندات الصرف والقبض والتسويات",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 17, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 206,
+      "q_order": 17, "q_name": "التحقق التلقائي", "q_description": "دقة رسائل التنبيه والتحقق التلقائي من توازن القيد وصحة الحسابات قبل الحفظ",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 18, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 206,
+      "q_order": 18, "q_name": "استقرار النظام", "q_description": "استقرار النظام وعدم حدوث تجميد أو إغلاق مفاجئ أثناء العمل اليومي الميداني",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 19, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 207,
+      "q_order": 19, "q_name": "تطابق الميزان", "q_description": "تطابق ميزان المراجعة وكشف حركة الأستاذ العام مع واقع السجلات ودفاتر اليومية",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 20, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 207,
+      "q_order": 20, "q_name": "التسويات البنكية", "q_description": "كفاءة وسرعة معالجة التسويات البنكية ومطابقة حسابات الأمانات والعهد",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 21, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 207,
+      "q_order": 21, "q_name": "استخراج الكشوفات", "q_description": "سرعة استخراج كشوفات الحسابات وتصديرها بصيغ Excel و PDF وتصفيتها بسهولة",
+      "q_type_a": "تقييم", "defect_category": "برمجي", "weight": 1.0, "max_score": 5
+    },
+    {
+      "value_id": 22, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 208,
+      "q_order": 22, "q_name": "البرامج التدريبية", "q_description": "كفاية البرامج التدريبية الموجهة للمحاسبين على شاشات وإجراءات النظام المحاسبي",
+      "q_type_a": "تقييم", "defect_category": "سوء استخدام", "weight": 2.0, "max_score": 5
+    },
+    {
+      "value_id": 23, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 208,
+      "q_order": 23, "q_name": "الأدلة الإرشادية", "q_description": "توفر أدلة إرشادية وتوثيق عملي مبسط ومحدث لكافة العمليات المالية والنماذج",
+      "q_type_a": "تقييم", "defect_category": "سوء استخدام", "weight": 1.5, "max_score": 5
+    },
+    {
+      "value_id": 24, "system_id": 10, "survey_id": 101, "sur_level": 103, "q_class_id": 208,
+      "q_order": 24, "q_name": "الدعم الميداني", "q_description": "سرعة استجابة فريق الدعم الفني لحل المشاكل التشغيلية للمحاسبين بالميدان",
+      "q_type_a": "تقييم", "defect_category": "سوء استخدام", "weight": 1.5, "max_score": 5
+    }
+  ],
+  "users": [
+    { "user_id": "100", "user_name_a": "علي خليل (المستشار الإشرافي)", "role": "admin", "group_name": "المستشارين", "group_id": 1, "user_password": "MQ==" },
+    { "user_id": "101", "user_name_a": "محمد المخلاقي (مهندس البنية وقواعد البيانات)", "role": "tech", "group_name": "الفريق الفني", "group_id": 3, "user_password": "MQ==" },
+    { "user_id": "102", "user_name_a": "إياد السمان (مدير عام المتابعة والإشراف)", "role": "management", "group_name": "الإدارة العليا", "group_id": 6, "user_password": "MQ==" },
+    { "user_id": "103", "user_name_a": "محاسب ميداني أول (الوحدات الحسابية)", "role": "enduser", "group_name": "المستخدم النهائي", "group_id": 4, "user_password": "MQ==" }
+  ],
+  "evaluations": [
+    { "user_id": "100", "value_id": 1, "rating": 4, "score": 4.0, "defect_category": "إداري", "evidence": "لائحة الصلاحيات لعام 2024 سارية مع تعديلات طفيفة", "note": "متوافق بنسبة 80% مع القانون المالي" },
+    { "user_id": "100", "value_id": 2, "rating": 5, "score": 5.0, "defect_category": "إداري", "evidence": "مطابقة تامة لسندات الصرف وأوامر الشيكات", "note": "ممتاز ولا يوجد تجاوز" },
+    { "user_id": "100", "value_id": 3, "rating": 4, "score": 4.0, "defect_category": "إداري", "evidence": "توقيعات إلكترونية ثلاثية المستويات", "note": "جيد جداً" },
+    { "user_id": "100", "value_id": 4, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "تقارير الحساب الختامي مستخرجة بنجاح", "note": "دقيق ومباشر" },
+    { "user_id": "100", "value_id": 5, "rating": 3, "score": 3.0, "defect_category": "إداري", "evidence": "لوحة المؤشرات تحتاج لإضافة مؤشر التدفق النقدي", "note": "مقبول ويحتاج تطوير" },
+    { "user_id": "100", "value_id": 6, "rating": 4, "score": 4.0, "defect_category": "فني", "evidence": "سجل Audit Trail مفعل ويسجل حركة المستخدمين", "note": "آمن وفعال" },
+    { "user_id": "100", "value_id": 7, "rating": 5, "score": 5.0, "defect_category": "فني", "evidence": "نسخ احتياطي يومي آلي على وحدة NAS مستقلة", "note": "ممتاز ومجرب بالاستعادة" },
+    { "user_id": "100", "value_id": 8, "rating": 4, "score": 4.0, "defect_category": "فني", "evidence": "إقفال شهري محكم ومنع القيد بعد الإقفال", "note": "سليم ومحمي" },
+    { "user_id": "100", "value_id": 9, "rating": 3, "score": 3.0, "defect_category": "فني", "evidence": "حدوث بطء استعلام في نهاية الشهر", "note": "يتطلب تحسين الفهارس Index Tuning" },
+    { "user_id": "100", "value_id": 10, "rating": 4, "score": 4.0, "defect_category": "فني", "evidence": "شبكة VPN حكومية مؤمنة", "note": "مستقر في أغلب الوحدات" },
+    { "user_id": "100", "value_id": 11, "rating": 4, "score": 4.0, "defect_category": "فني", "evidence": "شهادات SSL وتشفير اتصالات TLS 1.3", "note": "متوافق مع المعايير الأمنية" },
+    { "user_id": "100", "value_id": 12, "rating": 3, "score": 3.0, "defect_category": "فني", "evidence": "الخادم الاحتياطي يعمل يدوياً وليس Failover آلي", "note": "يوصى بتفعيل AlwaysOn" },
+    { "user_id": "100", "value_id": 13, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "بنية تقنية .NET & SQL حديثة", "note": "استقرار برمجي ممتاز" },
+    { "user_id": "100", "value_id": 14, "rating": 3, "score": 3.0, "defect_category": "برمجي", "evidence": "الربط مع الضرائب قيد التجربة الميدانية", "note": "يحتاج استكمال الربط مع الجمارك" },
+    { "user_id": "100", "value_id": 15, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "شجرة حسابات سباعية المستويات مرنة", "note": "تستوعب التعديلات الحكومية" },
+    { "user_id": "100", "value_id": 16, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "شاشات قيود سريعة مع اختصارات لوحة المفاتيح", "note": "سلسة وسريعة الاستجابة" },
+    { "user_id": "100", "value_id": 17, "rating": 5, "score": 5.0, "defect_category": "برمجي", "evidence": "منع ترحيل أي قيد غير متوازن برمجياً بنسبة 100%", "note": "محكم للغاية" },
+    { "user_id": "100", "value_id": 18, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "متوسط تشغيل 99.5% بدون توقفات مفاجئة", "note": "مستقر وموثوق" },
+    { "user_id": "100", "value_id": 19, "rating": 5, "score": 5.0, "defect_category": "برمجي", "evidence": "تطابق تام بين ميزان المراجعة وكشوفات الأستاذ", "note": "دقيق وموثوق محاسبياً" },
+    { "user_id": "100", "value_id": 20, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "تسوية بنكية آلية عبر ملفات الـ MT940", "note": "فعال ودقيق" },
+    { "user_id": "100", "value_id": 21, "rating": 4, "score": 4.0, "defect_category": "برمجي", "evidence": "تصدير فوري إلى Excel بدقة تنسيق عالية", "note": "يلبي احتياجات المراجعة" },
+    { "user_id": "100", "value_id": 22, "rating": 3, "score": 3.0, "defect_category": "سوء استخدام", "evidence": "تدريب 60% فقط من المحاسبين الجدد", "note": "فجوة تأهيل تتطلب خطة تدريبية مكثفة" },
+    { "user_id": "100", "value_id": 23, "rating": 3, "score": 3.0, "defect_category": "سوء استخدام", "evidence": "الدليل الإرشادي ورقي قديم وغير مدمج بالشاشات", "note": "يوصى بدليل إلكتروني تفاعلي" },
+    { "user_id": "100", "value_id": 24, "rating": 4, "score": 4.0, "defect_category": "سوء استخدام", "evidence": "فريق الدعم الفني يستجيب خلال ساعة بالمتوسط", "note": "أداء طيب مع الحاجة لزيادة الكادر" }
+  ]
+}

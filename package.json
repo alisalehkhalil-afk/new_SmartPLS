@@ -1,0 +1,28 @@
+{
+  "name": "new-smartpls",
+  "version": "1.0.0",
+  "description": "منصة تشخيص وتقييم الأنظمة المالية الحكومية - وزارة المالية (New_SmartPLS)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test_connection.js"
+  },
+  "keywords": [
+    "evaluation",
+    "smartpls",
+    "finance-ministry",
+    "afmis",
+    "audit",
+    "mssql"
+  ],
+  "author": "Executive IT Unit - Ministry of Finance",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "mssql": "^10.0.2"
+  }
+}
